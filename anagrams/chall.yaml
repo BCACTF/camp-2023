@@ -9,6 +9,7 @@ description: |-
   and not to go over it. I don't really know what that means, but maybe you'll enjoy the game.
 hints:
   - Have you heard of a buffer overflow?
+ignore_missing: true
 files:
   - src: ./anagrams
   - src: ./main.c
