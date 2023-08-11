@@ -29,8 +29,8 @@ int main(int argv, char **argc) {
     
     int count = 0;
     char* flagCopy;
-    while (count < 100000) {
-        
+
+    while (count < 100000) {    
         srand(time(NULL));
         int n = rand() % 7 + 1;
         char word_flag[FLAG_SIZE+12+SPACE];
@@ -39,12 +39,12 @@ int main(int argv, char **argc) {
         fgets(word_flag+n+1+SPACE, FLAG_SIZE, f);
         fclose(f);
 
+        strcpy(flagCopy, word_flag+n+1+SPACE);
         // We already know where the string will end, so we can place a null terminator there
         *(word_flag + n+1) = '\0';
         
         printf("Give me an anagram of length %d: ", n);
         
-        // printf("Checking the validity of the anagram %d... \n", strlen(word_flag));
         //load the input into the string word
         int c;
         int lettercount=0;
@@ -52,21 +52,21 @@ int main(int argv, char **argc) {
             *(word_flag+(lettercount++)) = c;
         }
 
-        printf("Checking the validity of the anagram... %s", word_flag);
+        printf("Checking the validity of the anagram... %s\n", word_flag);
         
-        printf("\n");
         int correct = isAnagramOfSize(word_flag, n);
 
         if (correct) {
             printf("Correct!\n");
             count++;
-        }
-        else {
+        } else {
             printf("Incorrect!\n");
             printf("You got %d correct!\n", count);
             return 0;
         }
     }
+
     printf("You got 100000 correct! Here's your flag: %s\n", flagCopy);
+    
     return 0;
 }
