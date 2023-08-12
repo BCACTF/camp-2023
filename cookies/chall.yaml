@@ -7,9 +7,7 @@ description: |-
   My favorite snack is cookies, but I'll only reveal my secret recipe [the flag] to the right person.
 hints:
   - Do you know what cookies actually are used for?
-  - How could you impersonate the website admin?
-files:
-  - src: ./flag.txt
+  - What if you could impersonate the website admin? How?
 authors:
   - Mudasir
 visible: true
