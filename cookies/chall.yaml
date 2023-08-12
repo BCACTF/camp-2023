@@ -13,4 +13,7 @@ files:
 authors:
   - Mudasir
 visible: true
-# TODO: deployment
+deploy:
+  web:
+    build: .
+    expose: 8191/tcp
