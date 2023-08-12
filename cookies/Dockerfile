@@ -10,4 +10,4 @@ COPY . .
 
 # run and expose
 EXPOSE 8191
-CMD ["python3", "-m" , "server.py"]
+CMD ["python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=8191"]

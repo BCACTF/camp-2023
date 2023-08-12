@@ -1,8 +1,8 @@
 from flask import Flask, request, render_template, redirect, url_for, make_response, send_from_directory
-
+import os
 app = Flask(__name__)
 USERNAME='admin'
-PASSWORD='secretandunguessablepasswordthatnobodywilleverguesshahaha'
+PASSWORD=os.environ.get('PASSWORD')
 
 @app.route('/')
 @app.route('/index')
