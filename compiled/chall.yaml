@@ -5,7 +5,7 @@ value: 200
 flag: camp{C0mP1l3R_cH4mP10n}
 description: |-
   My friend gave me this file, but I can't
-  open it. Is there anything you can do 
+  read it. Is there anything you can do 
   with this?
 files:
   - src: ./compiled.exe
