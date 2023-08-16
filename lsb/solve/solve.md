@@ -2,11 +2,9 @@
 
 LSB stands for least significant bit, and is a simple way of hiding text, especially in binary encoded files, such as images.
 
-To encode, the least significant bit of each byte is changed to the next bit of the message. For example, if the message is "hello", the first few bytes of the image would be changed to:
+To encode, the least significant bit of each byte is changed to the next bit of the message. The image will look almost exactly the same, since the tiny difference does not affect the color by a perceivable amount, and the message can be retrieved by reversing the process.
 
-Since the least significant bit of each byte is changed, the image will look almost exactly the same, and the message can be retrieved by reversing the process.
-
-For example, if one byte in our image is `10010101`, the binary place value is greatest at the right most side of the byte.
+The most significant bit in a byte is worth 2^7 or 128, while the least significant bit is only worth 2^0 or 1. Changing the lesser one will not affect the color significantly, so we can chain the least significant bits of each byte to encode a message.
 
 In order to decode LSB, we can use an online tool or write our own script in python, as seen in the [dec.py](dec.py) file.
 
