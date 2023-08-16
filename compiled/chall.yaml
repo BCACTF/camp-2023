@@ -1,15 +1,19 @@
 name: Compiled
 categories:
-  - binex
+  - rev
 value: 200
 flag: camp{C0mP1l3R_cH4mP10n}
 description: |-
-  My friend gave me this file, but I can't
-  read it. Is there anything you can do 
-  with this?
-  (Note) most CTF flags are comprised of sensible phrases related to the problem.
+  My friend gave me this file, but I can't read it. Is there anything you can do with this?
+hints:
+ - Do you know what decompilation is?
 files:
-  - src: ./compiled.exe
+  - src: /home/ctf/compiled
+    dest: compiled
+    container: dockercompiler
 authors:
   - Jack
 visible: true
+deploy:
+  dockercompiler:
+    build: .
