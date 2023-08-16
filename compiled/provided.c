@@ -32,7 +32,7 @@ char* getString() {
     return input;
 }
 
-int getNumber(x) {
+int getNumber(int x) {
     return x/2;
 }
 
@@ -121,22 +121,13 @@ int checkIndexOf(char* password) {
     return indexOf(passwordMinusCamp, 'p') == -1;
 }
 
-int checkFlag(char* password, char* flag) {
-    for (int i = 0; password[i] != '\0'; i++) {
-        if (password[i] != flag[i]) {
-            return 0;
-        }
-    }
-    return 1;
-}
-
 int main() {
     char* flag = "camp{REDACTED}";
 
     printf("Enter your password: ");
     char* password = getString(); 
 
-    if (checkLength(password) && checkDigits(password) && checkUnderscore(password) && checkLetters(password) && checkASCII(password) && checkIndexOf(password) && checkFlag(password, flag)) {
+    if (checkLength(password) && checkDigits(password) && checkUnderscore(password) && checkLetters(password) && checkASCII(password) && checkIndexOf(password)) {
         printf("Correct");
     }
     else {
