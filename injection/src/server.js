@@ -47,10 +47,8 @@ app.get('/render', (req, res) => {
         let myAuth = true;
         if (req.cookies.allowedintotheserver !== TOKEN) 
             myAuth = false;
-        else {
-            console.log(rows, myAuth);
-            return res.render('viewer', { title: 'Patient Portal', data: rows, myauth: myAuth, name: req.query.name });
-        }
+        console.log(rows, myAuth);
+        return res.render('viewer', { title: 'Patient Portal', data: rows, myauth: myAuth, name: req.query.name });
     });
     return res.render('index', { title: 'Patient Portal Login' });
 });
@@ -67,7 +65,7 @@ app.post('/login', (req, res) => {
         if (rows.length === 0) {
             console.log(`Invalid login attempt: ${name} ${pwd}`);
             console.log(`SQL: ${sql}`);
-            return res.send('403: Forbidden \r\n \n Invalid username or password');
+            return res.send('403: Forbidden \n Invalid username or password');
         }
         res.cookie('allowedintotheserver', TOKEN);
         return res.redirect(`/render?name=${name}`);
