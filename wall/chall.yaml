@@ -1,0 +1,15 @@
+name: Wall
+categories:
+  - web
+value: 75
+flag: camp{1nTerC3pt1ON!_M4SteR}}
+description: |-
+  I was playing this online game, but I can't seem to get past the 10th level, can you help me?
+hints:
+  - How do websites communicate with servers
+files:
+  - src: #IDK
+authors:
+  - Jack Crowley
+visible: true
+# TODO Deployment
