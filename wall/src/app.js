@@ -50,10 +50,6 @@ let validKeys = [0,1,2,3]
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
-  res.redirect("/bundled.js")
-});
-
-app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
   req.session.nodes = [...remainingNodes]
   shuffleArray(req.session.nodes)
