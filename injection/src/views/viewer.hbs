@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data for {{name}}</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <h1>Data for {{name}}</h1>
+    <h3>Auth Level: {{myauth}}</h3>
+    <table border="1">
+        <tr>
+            <th>Data</th>
+        </tr>
+        {{#if myauth}}
+        {{#each data}}
+        <tr>
+            <td>{{this.data}}</td>
+        </tr>
+        {{/each}}
+        {{/if}}
+        {{#unless myauth}}
+        <tr>
+            <td colspan="2">No data available</td>
+        </tr>
+        {{/unless}}
+    </table>
+</body>
+
+</html>

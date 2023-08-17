@@ -1,0 +1,19 @@
+name: Injection
+categories:
+  - webex
+value: 25
+flag: camp{SQL_!nj3cteD!_w0W_329rh8qwrfj}
+description: |-
+  i feel like my doctor is hiding something in his database, but his web portal keeps telling me I'm not authorized to find out.
+hints:
+  - Do you know what language is used to query databases?
+  - Read up on injection attacks.
+files:
+  - src: ./src/server.js
+authors:
+  - Mudasir
+visible: true
+deploy:
+  web:
+    build: .
+    expose: 31571/tcp
