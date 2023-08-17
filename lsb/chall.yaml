@@ -1,0 +1,18 @@
+name: LSB
+categories:
+  - foren
+  - rev
+value: 125
+flag:
+  file: ./flag.txt
+description: |-
+  I sent my friend a flag, but he said it wasn't good enough. He said he made some improvements and
+  sent it back to me, but it looks the same to me.
+hints:
+  - Maybe your eyes aren't good enough
+files:
+  - src: ./flag_enc.png
+    dest: ./flag.png
+authors:
+  - Mudasir
+visible: true
