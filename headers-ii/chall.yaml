@@ -1,0 +1,16 @@
+name: Headers II
+categories:
+  - foren
+value: 75
+flag: camp{wH@7s_an_3xTr@_f!l3_aNYw@y$_r3dhi8ib28bf}
+description: |-
+  My friends are passing even weirder files within the group chat now. 
+  I have no clue what they're trying to hide this time.
+hints:
+  - There's no file extension, but what other way could I figure out what type of file it is?
+  - Someone told me there might be multiple files (even though they only sent one)
+files:
+  - src: funnyfile
+authors:
+  - Mudasir
+visible: true
