@@ -1,0 +1,14 @@
+name: JailBreak
+categories:
+  - misc
+value: 75
+flag: camp{PYth0n_M4steR_M2!f45}
+description: |-
+  After a recent prison escape due to hidden messages in letters, the facility has tightened security. Can you find a way around these new measures?
+hints:
+  - How can you access variables in python?
+files:
+  - src: ./main.py
+authors:
+  - Jack Crowley
+visible: true
