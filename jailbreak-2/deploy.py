@@ -7,7 +7,7 @@ def end():
     exit()
 
 BANNED_CHARS = "gdvxfiyundmn'~`@#$%^&.{}0123456789"
-flag = "REDACTED"
+flag = "camp{PyTH0n_M4st3R_Pr0veD}"
 
 print("Welcome to the prison's mail center")
 
