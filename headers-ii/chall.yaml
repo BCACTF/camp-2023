@@ -10,7 +10,7 @@ hints:
   - There's no file extension, but what other way could I figure out what type of file it is?
   - Someone told me there might be multiple files (even though they only sent one)
 files:
-  - src: funnyfile
+  - src: funfile
 authors:
   - Mudasir
 visible: true
