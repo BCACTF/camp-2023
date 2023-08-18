@@ -3,7 +3,7 @@ def sanitize(letter):
     return any([i in letter.lower() for i in BANNED_CHARS])
 
 BANNED_CHARS = "gdvxftundmn'~`@#$%^&*-/.{}"
-flag = "camp{PYth0n_M4steR_M2!f45}"
+flag = "REDACTED"
 
 print("Welcome to the prison's mail center")
 msg = input("Please enter your message: ")
@@ -12,4 +12,7 @@ if sanitize(msg):
     print("Contraband letters found!\nMessage Deleted!")
     exit()
 
-exec(msg)
+try:
+    exec(msg)
+except Exception as e:
+    print(f'Error occured: {str(e)}; Message could not be sent.')
