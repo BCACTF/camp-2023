@@ -14,4 +14,4 @@ visible: true
 deploy:
   web:
     build: .
-    expose: 9999
+    expose: tcp/9999
