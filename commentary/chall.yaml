@@ -1,0 +1,17 @@
+name: Commentary
+categories:
+  - webex
+value: 25
+flag: camp{h!Dd3n_in_pL41n_51GhT_fr3b9if3}
+description: |-
+  My friends seem to have a lot of commentary on my coding style. 
+  I just hope they haven't published it anywhere...
+hints:
+  - Do you know how to view the source of a webpage?
+authors:
+  - Mudasir
+visible: true
+deploy:
+  web:
+    build: .
+    expose: 9999
