@@ -20,12 +20,15 @@ let hoursGoneBy = 0;
 let distance = 0;
 let speed = 0;
 const loop = async () => {
+
+    hoursGoneBy += 1;
+    distance += speed | 0;
+    distance >>>= 0;
+
     console.log("Hours gone by: " + hoursGoneBy);
     console.log("Distance travelled: " + distance + " miles");
-    hoursGoneBy += 1;
-    distance += speed >>> 0;
-    distance |= 0;
-    if (distance === -1) {
+    console.log("Current speed: " + speed);
+    if (distance >= 2 * 1000 * 1000) {
         console.log("How did you get so far so fast??");
         console.log("I guess you deserve the flag");
 
@@ -35,10 +38,10 @@ const loop = async () => {
 
     let answer;
     do {
-        answer = await ask("Do you want to change the speed? (Y or N):");
+        answer = await ask("Do you want to change the speed? (Y or N): ");
     } while (isYOrN(answer) === false);
 
-    if (answer === "Y") {
+    if (answer.toUpperCase() === "Y") {
         let newSpeed = (parseInt(await ask("Enter new speed: ")) | 0);
         
         if (newSpeed > 100) {
@@ -47,12 +50,15 @@ const loop = async () => {
             newSpeed = 100;
         }
 
-        // cast unsigned js
-        newSpeed >>>= 0;
+        // cast signed js
+        speed = newSpeed | 0;
 
         console.log("New speed: " + newSpeed);
     }
 
 
+    console.log("Driving...");
     setTimeout(() => loop(), 1000);
 }
+
+loop();

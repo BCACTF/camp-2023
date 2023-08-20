@@ -5,6 +5,7 @@ signed int speed = 0;
 void loop() {
     print("Hours gone by: %d", hoursGoneBy);
     print("Distance travelled: %u", distance);
+    print("Current speed: %d", speed);
 
     if (distance >= 2 * 1000 * 1000) {
         print("How did you get so far so fast??");
@@ -24,6 +25,8 @@ void loop() {
 
         print("New speed: %d", new_speed);
     }
+
+    print("Driving...");
 }
 
 int main() {
