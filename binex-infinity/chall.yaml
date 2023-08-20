@@ -1,0 +1,21 @@
+name: To Infinity and Beyond!
+categories:
+  - binex
+value: 100
+flag:
+  file: ./flag.txt
+description: >-
+  In this program, your goal is to get your character
+  to Infinity and Beyond!
+hints:
+  - Whats with all this "signed" and "unsigned" in the code?
+authors:
+  - Andrew
+files:
+  - src: ./provided.c
+    name: src.c
+deploy:
+  web:
+    build: .
+    expose: 3000/tcp
+visible: true
