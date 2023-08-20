@@ -5,8 +5,8 @@ RUN apt-get update -y && apt-get install -y gcc && apt-get install -y wget && ap
 COPY main.c .
 RUN gcc -o anagrams main.c
 
-RUN wget -qO /tmp/ynetd.zip https://github.com/rwstauner/ynetd/releases/download/v0.14/ynetd-linux-amd64.zip \
-  && unzip -d ynetd /tmp/ynetd.zip \
+RUN wget -Oynetd.c https://raw.githubusercontent.com/johnsonjh/ynetd/master/ynetd.c \
+  && gcc -o ynetd ynetd.c \
   && rm -f /tmp/ynetd.zip
 
 
@@ -15,10 +15,10 @@ FROM --platform=linux/amd64 ubuntu@sha256:86ac87f73641c920fb42cc9612d4fb57b5626b
 RUN useradd -m -d /home/ctf -u 12345 ctf
 WORKDIR /home/ctf
 
-RUN chmod +x ynetd
 
 COPY --from=build anagrams anagrams
 COPY --from=build ynetd ynetd
+RUN chmod +x ynetd
 COPY flag.txt .
 COPY main.c main.c
 
