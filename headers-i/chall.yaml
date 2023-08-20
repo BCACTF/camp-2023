@@ -1,0 +1,17 @@
+name: Headers I
+categories:
+  - foren
+value: 50
+flag:
+  file: ./flag.txt
+description: |-
+  My friends are sending files in the group chat, but Windows doesn't know how to 
+  open them. Maybe it's because they don't have any file extensions?
+hints:
+  - How else could you identify a file type
+  - By the way, anything in the flag that looks like an O is actually a zero
+files:
+  - src: ./weirdfile
+authors:
+  - Mudasir
+visible: true
