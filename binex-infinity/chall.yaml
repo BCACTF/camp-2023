@@ -15,7 +15,7 @@ files:
   - src: ./provided.c
     name: src.c
 deploy:
-  web:
+  nc:
     build: .
-    expose: 3000/tcp
+    expose: 9999/tcp
 visible: true
