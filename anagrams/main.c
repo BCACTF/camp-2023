@@ -3,8 +3,8 @@
 #include <string.h>
 #include <time.h>
 
-#define FLAG_SIZE 37
-#define SPACE 12
+#define FLAG_SIZE 37 // with null terminator
+#define SPACE 12 // a little extra space
 
 int isAnagramOfSize(char* word, int n) {
     if (strlen(word) != n) {
@@ -28,21 +28,27 @@ int main(int argv, char **argc) {
     printf("Let's see how far you can get!\n");
     
     int count = 0;
-    char* flagCopy;
+    char flagCopy[FLAG_SIZE+1];
 
     while (count < 100000) {    
-        srand(time(NULL));
-        int n = rand() % 7 + 1;
-        char word_flag[FLAG_SIZE+12+SPACE];
+        srand(time(NULL)); //seed the random number generator with the time 
+        int n = rand() % 7 + 1; //random number between 1 and 7
+        char word_flag[FLAG_SIZE+SPACE+n+1]; //space for the flag and the anagram
         
+        //reset word_flag to an empty string
+        for (int i = 0; i < FLAG_SIZE+SPACE+n+1; i++) {
+            word_flag[i] = 32;
+        }
+        
+        // Load the flag into the string word_flag, and also into flagCopy (for ✨redundancy✨)
         FILE* f = fopen("flag.txt", "r");
         fgets(word_flag+n+1+SPACE, FLAG_SIZE, f);
+        fseek(f, 0, SEEK_SET);
+        fgets(flagCopy, FLAG_SIZE, f);
         fclose(f);
 
-        strcpy(flagCopy, word_flag+n+1+SPACE);
         // We already know where the string will end, so we can place a null terminator there
-        *(word_flag + n+1) = '\0';
-        
+        word_flag[n+SPACE] = '\0';
         printf("Give me an anagram of length %d: ", n);
         
         //load the input into the string word

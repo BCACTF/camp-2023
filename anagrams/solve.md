@@ -18,8 +18,8 @@ With the right length string, we can overwrite the `\0` (null terminator) and re
 Welcome to bofed!
 The game is simple: I'll tell you a number, and you have to tell me an anagram of that length.
 Let's see how far you can get!
-Give me an anagram of length 3: aaaaaaaaaaaaaaaa
-Checking the validity of the anagram... aaaaaaaaaaaaaaaacamp{7o0_m@nY_ch@RacteR5_buf349nrf}
+Give me an anagram of length 5: aaaaaaaaaaaaaaaaaa
+Checking the validity of the anagram... aaaaaaaaaaaaaaaaaacamp{7o0_m@nY_ch@RacteR5_buf349nrf}
 Incorrect!
 You got 0 correct!
 ```
