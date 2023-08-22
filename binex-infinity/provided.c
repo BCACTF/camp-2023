@@ -1,3 +1,10 @@
+// The following is pseudocode (pseudo C)
+// and will not compile on its own
+
+// It is just here to give you a general 
+// sense of what the program's code
+// looks like
+
 unsigned long hoursGoneBy = 0;
 unsigned int distance = 0;
 signed int speed = 0;
