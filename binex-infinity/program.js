@@ -45,8 +45,8 @@ const loop = async () => {
         let newSpeed = (parseInt(await ask("Enter new speed: ")) | 0);
         
         if (newSpeed > 100) {
-            console.log("Haha. The speed is too fast");
-            console.log("Slowing to 100 mph");
+            console.log("Haha. That speed is too fast");
+            console.log("Slowing down to 100 mph");
             newSpeed = 100;
         }
 
