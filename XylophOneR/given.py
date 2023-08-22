@@ -7,7 +7,6 @@ def hexify(string):
     return out
 
 flag = hexify("REDACTED")
-
 inp = hexify(input())
 
 outBits = ""

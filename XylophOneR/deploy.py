@@ -26,7 +26,6 @@ out = ""
 
 for i in range(0, len(outBits), 8):
     value = int(outBits[i:i+8], 2)
-    print(value)
     out+=f"{value:02x}"
 
 print(out)
