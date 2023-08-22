@@ -6,7 +6,7 @@ def hexify(string):
 
     return out
 
-flag = hexify("bcactf{Y0u_4Re_4_X0R_Ch4mp1On_!!}")
+flag = hexify("REDACTED")
 
 inp = hexify(input())
 
