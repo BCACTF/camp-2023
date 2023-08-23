@@ -1,8 +1,18 @@
-#camp{THis_wA5_SUPpO5E_to_Be_5Ecur3_b34018d8b0f1e}
+# camp{THis_wA5_SUPpO5E_to_Be_5Ecur3_b34018d8b0f1e}
 def passwordChecker(guess):
-    flag = ['c', 'a', 'm', 'p', '{', 'T', 'H', 'i', 's', '_', 'w', 'A', '5', '_', 'S', 'U', 'P', 'p', 'O', '5', 'E', '_', 't', 'o', '_', 'B', 'e', '_', '5', 'E', 'c', 'u', 'r', '3', '_', 'b', '3', '4', '0', '1', '8', 'd', '8', 'b', '0', 'f', '1', 'e', '}']
-    
-    return guess == "".join(flag)
+
+    if guess[:5] == "camp{":
+        if guess[41:43] == "d8":
+            if guess[12:15] == "5_S":
+                if guess[30:34] == "cur3":
+                    if guess[23:30] == "o_Be_5E":
+                        if guess[5:12] == "THis_wA":
+                            if guess[15:23] == "UPpO5E_t":
+                                if guess[43:] == "b0f1e}":
+                                    if guess[34:41] == "_b34018":
+                                        return True
+
+    return False
 
 
 guess = input("Enter the password: ")
