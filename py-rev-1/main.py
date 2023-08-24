@@ -1,4 +1,3 @@
-# camp{THis_wA5_SUPpO5E_to_Be_5Ecur3_b34018d8b0f1e}
 def passwordChecker(guess):
 
     if guess[:5] == "camp{":
