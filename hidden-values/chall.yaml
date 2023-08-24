@@ -1,0 +1,15 @@
+name: Hidden Values
+categories:
+  - web
+value: 50
+flag: camp{YOu_WerENt_5Upp0sE_T0_se3_THI5_55d28b16d94c3}
+description: |-
+  - I have the right username and password, `bcaCTFAdmin2?` and `admin!?!?!?!`, but it is not letting me login.
+  Can you figure out why?
+hints:
+  - How do forms send values?
+authors:
+  - Jack Crowley
+visible: true
+
+#todo deployment
