@@ -1,0 +1,14 @@
+name: Python Rev 2
+categories:
+  - rev
+value: 125
+flag: camp{YOu_foUnD_A_rIGhT_P4tH!}
+description: |-
+  - After too many wrong password attempts, the system locked my out. Can you get me back in?
+hints:
+  - How do dictionarys work in python?
+files:
+  - src: main.py
+authors:
+  - Jack Crowley
+visible: true
