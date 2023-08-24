@@ -17,7 +17,7 @@ public class RevOne {
    }
 
    public static boolean checkPassword(String passwordGuess) {
-      String[] flagSegments = {"C0nGr4TulAt1OnS", "Y0u", "J4v4", "Pr0"};
+      String[] flagSegments = {"C0nGr4TulAt1OnS", "Y0u", "4Re", "J4v4", "Pr0"};
 
       String flag = "camp{"+String.join("_", flagSegments)+"}";
 
