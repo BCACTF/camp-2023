@@ -15,18 +15,18 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 And we will get an output such as 
 
 ```
-0302000215071a3851143e5533043e553e3951333e2209550c11502e0f3e40401c0302000215071a3851143e5533043e553e
+02000c111a3851143e5533043e553e3951333e2209550c11502e0f3e40401c02000c111a3851143e5533043e553e3951333e
 ```
 
 And using our above logic, we now have a `in` and `out`, and XORing them against each other in `XylOphoneR.py` like this,
 
 ```
-flag = "0302000215071a3851143e5533043e553e3951333e2209550c11502e0f3e40401c0302000215071a3851143e5533043e553e" # The output
+flag = "02000c111a3851143e5533043e553e3951333e2209550c11502e0f3e40401c02000c111a3851143e5533043e553e3951333e" # The output
 inp = hexify("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa") # the same input as above
 ```
 
 will produce our flag in hex, and using a hex to ascii converter like [RapidTables](https://www.rapidtables.com/convert/number/hex-to-ascii.html), we can get our flag.
 
 ```
-bcactf{Y0u_4Re_4_X0R_Ch4mp1On_!!}
+camp{Y0u_4Re_4_X0R_Ch4mp1On_!!}
 ```

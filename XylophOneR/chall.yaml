@@ -2,13 +2,13 @@ name: XylophOner
 categories:
   - crypto
 value: 150
-flag: bcactf{Y0u_4Re_4_X0R_Ch4mp1On_!!}
+flag: camp{Y0u_4Re_4_X0R_Ch4mp1On_!!}
 description: |-
   I found this weird program that outputs numbers. Can you make anything of it?
 hints:
   - Look at the name of the challenge
 files:
-  - src: ./given.txt
+  - src: ./given.py
     dest: XylophOner.py 
 authors:
   - Jack Crowley
