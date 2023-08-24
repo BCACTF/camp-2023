@@ -1,0 +1,13 @@
+name: Java Rev 3
+categories:
+  - rev
+value: 150
+flag: camp{y0U_offic1ALLY_Be4t_jAVa_REV_!!}
+description: |-
+  That's it. Here is a truly unbreakable passcode checker. But if you want to waste your time go ahead!
+hints:
+files:
+  - src: RevThree.java
+authors:
+  - Jack Crowley
+visible: true
