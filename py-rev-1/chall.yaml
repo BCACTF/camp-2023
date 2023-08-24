@@ -8,7 +8,7 @@ description: |-
 hints:
   - How does indexing strings work?
 files:
-  - src: main.java
+  - src: main.py
 authors:
   - Jack Crowley
 visible: true
