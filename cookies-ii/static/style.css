@@ -1,0 +1,13 @@
+body {
+    background-color: #262626;
+    color: #fff;
+    width: max-content;
+    margin: 5vh auto;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+a {
+    color: #fff;
+}

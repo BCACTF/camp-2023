@@ -1,0 +1,18 @@
+name: Cookies II
+categories:
+  - webex
+value: 50
+flag: camp{$w3eT_c00ki3s_3nc0deD_duy4fejiefnb}
+description: |-
+  My favorite snack is cookies, but I'll only reveal my secret recipe [the flag] to the right person.
+  This time I [en]coded the cookies myself, so only the website admin can figure out what they really are. 
+hints:
+  - Do you know what a base conversion is?
+  - Have you heard of the base64 encoding?
+authors:
+  - Mudasir
+visible: true
+deploy:
+  web:
+    build: .
+    expose: 8191/tcp
