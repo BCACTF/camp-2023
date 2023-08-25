@@ -1,15 +1,5 @@
 # JailBreak
 
-The `exec` function in python is very dangerous, especially with it executing an input given by the user. 
+The `eval` function in python is very dangerous, especially with it evaluating an input given by the user. For instance, if you type evaluatate a string with the value of `randomVariable`, it will evaluatate to the value of a variable `randomVariable`. 
 
-This is what `PyJail` problems are built off of, where they restrict inputs, functions, or anything else to make it more challenging to get the flag.
-
-Based off of the banned keys, `gdvxftundmn'~`\``@#$%^&*-/.{}`, there are only a few functions we can use, one of which is the key to solving the problem, `locals`.
-
-`locals` is a function that has reference to all of the local parameters, including the `flag` variable which stores the flag. But since the `flag` has banned characters, we must use `chr()` function with the ascii value of each letter and join them together.  
-
-```
-locals()[chr(102)+chr(108)+chr(97)+chr(103)]
-```
-
-Using this input, the flag will be printed out.
+This can be used to retrieve the flag, as when it asked for the user input, if you give it `hidden_flag`, it will print out contents of the `hidden_flag` variable, which in this case is the flag.
