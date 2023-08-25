@@ -1,4 +1,4 @@
-name: Intro To RSA 1
+name: Intro To RSA I
 categories:
   - crypto
 value: 125
@@ -7,7 +7,8 @@ description: |-
   I found this document that has some leftover numbers, can you do anything with them?
 
   (Note) For RSA you need the message represented as a number, which varies depending on usage.
-  For this case, a hex string was created by linking the ascii values of the letters in hex together, and then converting the large hex number into base 10.
+  For this case, a hex string was created by linking the ascii values of the letters in hex 
+  together, and then converting the large hex number into base 10.
 hints:
   - What is RSA?
   - Why is it important to keep `p` and `q` secret?
