@@ -9,8 +9,8 @@ description: |-
   (Note) For RSA you need the message represented as a number, which varies depending on usage.
   For this case, a hex string was created by linking the ascii values of the letters in hex together, and then converting the large hex number into base 10.
 hints:
-  - What is RSA
-  - Why does it matter that `p` and `q` are considered "private keys?"
+  - What is RSA?
+  - Why is it important to keep `p` and `q` secret?
 files:
   - src: ./info.txt
     dest: rsa1.txt
