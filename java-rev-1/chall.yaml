@@ -1,0 +1,15 @@
+name: Java Rev 1
+categories:
+  - rev
+value: 50
+flag: camp{C0nGr4TulAt1OnS_Y0u_4Re_J4v4_Pr0}
+description: |-
+  I keep on trying to get past this password checker but it won't let me, can you
+  find the right password?
+hints:
+  - What does the String.join() method do?
+files:
+  - src: RevOne.java
+authors:
+  - Jack Crowley
+visible: true
