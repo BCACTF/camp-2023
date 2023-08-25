@@ -16,5 +16,7 @@ def passwordChecker(guess):
 
 guess = input("Enter the password: ")
 
-if passwordChecker(guess): print("That's the right password!")
-else: print("That's the incorrect password!")
+if passwordChecker(guess):
+    print("That's the right password!")
+else:
+    print("That's the incorrect password!")
