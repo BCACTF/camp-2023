@@ -1,5 +1,4 @@
 def passwordChecker(guess):
-
     if guess[:5] == "camp{":
         if guess[41:43] == "d8":
             if guess[12:15] == "5_S":
