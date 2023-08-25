@@ -39,25 +39,31 @@ app.get('/', (req, res) => {
     res.render('index', { title: 'Patient Portal Login' });
 });
 
-app.get('/render', (req, res) => {
+app.get('/render', async (req, res) => {
     const sql = 'SELECT data FROM medicalData';
-    db.all(sql, (err, rows) => {
-        if (err) throw err;
-        if (rows.length === 0) return res.send('No data found');
-        let myAuth = true;
-        if (req.cookies.allowedintotheserver !== TOKEN) 
-            myAuth = false;
+    let myAuth = true;
+    if (req.cookies.allowedintotheserver !== TOKEN) 
+        myAuth = false;
+    await db.all(sql, (err, rows) => {
+        if (err) {
+           res.render('viewer', { title: 'Patient Portal', data: rows, myauth: myAuth, name: req.query.name });
+           return;
+        }
+        if (rows.length === 0) {
+            res.send('No data found');
+            return;
+        }
         console.log(rows, myAuth);
-        return res.render('viewer', { title: 'Patient Portal', data: rows, myauth: myAuth, name: req.query.name });
+        res.render('viewer', { title: 'Patient Portal', data: rows, myauth: myAuth, name: req.query.name });
+        return;
     });
-    return res.render('index', { title: 'Patient Portal Login' });
 });
 
-app.post('/login', (req, res) => {
+app.post('/login', async (req, res) => {
     const name = req.body.username ?? 'Guest';
     const pwd = req.body.password ?? ' ';
     const sql = `SELECT * FROM info WHERE name='${name}' AND pwd='${pwd}';`;
-    db.all(sql, (err, rows) => {
+    await db.all(sql, (err, rows) => {
         if (err) {
             console.log(`SQL error in query: ${sql}`);
             throw err;
@@ -65,10 +71,12 @@ app.post('/login', (req, res) => {
         if (rows.length === 0) {
             console.log(`Invalid login attempt: ${name} ${pwd}`);
             console.log(`SQL: ${sql}`);
-            return res.send('403: Forbidden \n Invalid username or password');
+            res.send('403: Forbidden \n Invalid username or password');
+            return;
         }
         res.cookie('allowedintotheserver', TOKEN);
-        return res.redirect(`/render?name=${name}`);
+        res.redirect(`/render?name=${name}`);
+        return;
     });
 });
 
