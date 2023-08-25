@@ -1,0 +1,17 @@
+name: Space Trek
+categories:
+  - rev
+  - crypto
+value: 75
+flag: 
+  file: ./flag.txt
+description: |-
+  NASA has been cleaning up their files, and something seems wrong with this transcript of one of their missions. Can you find the flag and report back?
+hints:
+  - Explore the space.
+  - Believe it or not, there is a programming language that doesn't use text.
+files:
+  - src: ./mission_logs.txt
+authors:
+  - Parth
+visible: true
