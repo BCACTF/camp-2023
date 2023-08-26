@@ -1,0 +1,17 @@
+name: Hidden Values
+categories:
+  - webex
+value: 50
+flag: camp{YOu_WerENt_5Upp0sE_T0_se3_THI5_55d28b16d94c3}
+description: |-
+  I have the right username and password, `bcaCTFAdmin2?` and `admin!?!?!?!`, but it's not letting me log in.
+  Can you figure out why?
+hints:
+  - How do forms send values?
+authors:
+  - Jack Crowley
+visible: true
+deploy:
+  web:
+    build: ./src/
+    expose: 3000/tcp
