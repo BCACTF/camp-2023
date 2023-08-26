@@ -1,17 +1,20 @@
-name: XylophOner
+name: XylophOneR
 categories:
   - crypto
 value: 150
 flag: camp{Y0u_4Re_4_X0R_Ch4mp1On_!!}
 description: |-
-  I found this weird program that outputs numbers. Can you make anything of it?
+  I found this weird program that outputs numbers, but I can't make left
+  xor right of it. Can you help me?
 hints:
   - Look at the name of the challenge
 files:
   - src: ./given.py
-    dest: XylophOner.py 
+    dest: XylophOneR.py 
 authors:
   - Jack Crowley
 visible: true
-
-# TODO deployment (deploy.py)
+deploy:
+  nc:
+    build: .
+    expose: 8889/tcp
