@@ -7,7 +7,7 @@ def hexify(string):
     return out
 
 flag = hexify("REDACTED")
-inp = hexify(input())
+inp = hexify(input("Tell me something: "))
 
 outBits = ""
 

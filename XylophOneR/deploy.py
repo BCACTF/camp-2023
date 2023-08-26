@@ -8,7 +8,7 @@ def hexify(string):
 
 flag = hexify("camp{Y0u_4Re_4_X0R_Ch4mp1On_!!}")
 
-inp = hexify(input())
+inp = hexify(input("Tell me something: "))
 
 outBits = ""
 
