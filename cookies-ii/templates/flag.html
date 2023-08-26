@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Recipe!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3 id="text" style="font-family:'Comic Sans MS', sans-serif">
+    
+    </h3>
+    <script>
+        let text = document.getElementById("text");
+        let stuff = "Oh yeah, I gave you the flag. \n\n Trust me you already have it\n\n\nWhat do you mean you don't know where it is, you were right there!\n\n\n\nDon't tell me you closed devtools already??";
+        let i = 0;
+        let speed = 70;
+        typeWriter();
+        function typeWriter() {
+            if (i < stuff.length) {
+                if (stuff.charAt(i) == "\n") {
+                    text.innerHTML += "<br/>";
+                    speed += 30;
+                } else {
+                    text.innerHTML += stuff.charAt(i);
+                    speed = 50;
+                }
+                i++;
+                setTimeout(typeWriter, speed);
+            } else {
+                document.body.animate([
+                    {backgroundColor: "black", color: "white"}
+                ], {
+                    duration: 1000,
+                    iterations: 1,
+                    fill: "forwards",
+                    easing: "ease-in-out"
+                });
+                document.body.animate([
+                    {backgroundColor: "beige", color: "maroon"}
+                ], {
+                    duration: 1000,
+                    iterations: 1,
+                    fill: "forwards",
+                    easing: "ease-in-out",
+                    delay: 1000
+                });
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+adam    passwordlol 0
+admin    adminpasswordsareverysecureandyouwouldneverbeabletoguessthemhavefunhacking 1
+bob    1234password 0
+chris    P@ssw0rrdxd 0
+dave    password1234 0

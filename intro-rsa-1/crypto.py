@@ -1,0 +1,14 @@
+p=9431879136934316587737007754051353666702170335843
+q=486822630482432419113792900499540513680992433274933
+n=p*q
+z=(p-1)*(q-1)
+e=65537
+d=pow(e, -1, z)
+m = int("63616d707b5930755f476f745f5448455f664c41675f46526f6d5f6a5553745f6e756d626552537d", 16)
+print("Original message (m):", m)
+
+c = pow(m, e, n)
+print("Encrypted message (c):", c)
+
+m2 = pow(c, d, n)
+print("Decrypted message (m2):", m2)

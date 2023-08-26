@@ -1,0 +1,18 @@
+name: Unclear Vision
+categories:
+  - foren
+value: 50
+flag: camp{w0W_wh47_gR3@7_v!$!on}
+description: |-
+  I've been having some arguments over the internet, and this guy
+  keeps telling me that I'm giving contrasting opinions, and that
+  my vision is unclear. I don't know what he's talking about, but
+  he followed it up by sending me this file. 
+hints:
+  - The file looks very gray. I thought I saw some text, but I can't really make it out...
+files:
+  - src: ./flag.png
+    dst: image.png
+authors:
+  - Mudasir
+visible: true
