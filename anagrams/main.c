@@ -8,12 +8,14 @@
 
 int isAnagramOfSize(char* word, int n) {
     if (strlen(word) != n) {
+        printf("Your word is not the right length!\n");
         return 0;
     }
     else {
         // check if word is an anagram by looping over it and checking if each character is at the end of the word
         for (int i = 0; i < n; i++) {
             if (!(word[i] == word[n - i - 1])) {
+                printf("%c != %c", word[i], word[n - i - 1]);
                 return 0;
             }
         }
@@ -23,6 +25,12 @@ int isAnagramOfSize(char* word, int n) {
 
 int main(int argv, char **argc) {
     
+    // netcat config (don't worry about this)
+    setvbuf(stdout, NULL, _IONBF, 0);
+    setvbuf(stdin, NULL, _IONBF, 0);
+    setvbuf(stderr, NULL, _IONBF, 0);
+
+
     printf("Welcome to bofed!\n");
     printf("The game is simple: I'll tell you a number, and you have to tell me an anagram of that length.\n");
     printf("Let's see how far you can get!\n");
@@ -30,7 +38,8 @@ int main(int argv, char **argc) {
     int count = 0;
     char flagCopy[FLAG_SIZE+1];
 
-    while (count < 100000) {    
+    while (count < 100000) {   
+        
         srand(time(NULL)); //seed the random number generator with the time 
         int n = rand() % 7 + 1; //random number between 1 and 7
         char word_flag[FLAG_SIZE+SPACE+n+1]; //space for the flag and the anagram
@@ -61,7 +70,7 @@ int main(int argv, char **argc) {
         printf("Checking the validity of the anagram... %s\n", word_flag);
         
         int correct = isAnagramOfSize(word_flag, n);
-
+        
         if (correct) {
             printf("Correct!\n");
             count++;
