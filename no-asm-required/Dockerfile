@@ -2,7 +2,7 @@ FROM --platform=linux/amd64 ubuntu@sha256:86ac87f73641c920fb42cc9612d4fb57b5626b
 
 RUN apt-get update -y && apt-get install -y gcc wget unzip && rm -rf /var/lib/apt/lists/*
 
-RUN wget -Oynetd.c https://raw.githubusercontent.com/johnsonjh/ynetd/master/ynetd.c \
+RUN wget -O ynetd.c https://raw.githubusercontent.com/johnsonjh/ynetd/master/ynetd.c \
   && gcc -o ynetd ynetd.c \
   && rm -f /tmp/ynetd.zip
 

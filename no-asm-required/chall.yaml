@@ -8,8 +8,8 @@ description: >-
   That's right! This challenge works right out of the box!
   No need to assemble anything, all totally preassembled.
 hints:
-  - If it comes pre-assembled, all u can do is disassemble right?
-  - Heard of Ghidra?
+  - If it comes pre-assembled, all you can do is disassemble right?
+  - Have you heard of Ghidra?
 files:
   - src: /home/ctf/chall
     dest: chall

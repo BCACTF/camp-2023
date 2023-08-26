@@ -4,6 +4,11 @@
 static int NO_ONE_WILL_EVER_FIND_THIS_mwahahahahaha = 0x6FED;
 
 int main(int argv, char **argc) {
+
+    setvbuf(stdout, NULL, _IONBF, 0);
+    setvbuf(stdin, NULL, _IONBF, 0);
+    setvbuf(stderr, NULL, _IONBF, 0);
+
     int lol = 0xf00d;
 
     puts("Hey.");
