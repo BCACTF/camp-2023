@@ -1,0 +1,16 @@
+name: Java Rev 2
+categories:
+  - rev
+value: 100
+flag: camp{I_Gu3SS_Th1S_W4SNT_S3cuRe}
+description: |-
+  After your last break-in, my friend informed me that he made it almost impossible to solve.
+  Can you still find the password? 
+hints:
+  - Do you know what ASCII is?
+  - What does the % do?
+files:
+  - src: RevTwo.java
+authors:
+  - Jack Crowley
+visible: true
