@@ -1,0 +1,23 @@
+name: No Assembly Required
+categories:
+  - rev
+value: 50
+flag:
+  file: ./flag.txt
+description: >-
+  That's right! This challenge works right out of the box!
+  No need to assemble anything, all totally preassembled.
+hints:
+  - If it comes pre-assembled, all you can do is disassemble right?
+  - Have you heard of Ghidra?
+files:
+  - src: /home/ctf/chall
+    dest: chall
+    container: nc
+authors:
+  - Andrew
+visible: true
+deploy:
+  nc:
+    build: .
+    expose: 9999/tcp
