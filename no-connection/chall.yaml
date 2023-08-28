@@ -1,0 +1,16 @@
+name: No Connection
+categories:
+  - webex
+value: 25
+flag: camp{d0n7_aUth_oN_C!i3n7_51d3_bhiwsdwflowld}
+description: |-
+  My internet sucks, so I decided to move my login page to work offline.
+hints:
+  - No need to contact any servers! Everything happens right at home.
+authors:
+  - Mudasir
+visible: true
+deploy:
+  web:
+    build: .
+    expose: 80/tcp
