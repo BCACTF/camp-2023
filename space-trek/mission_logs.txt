@@ -1,100 +1,94 @@
 LCC: 10, 9, 8, 7, 6, 5 -
-   		   	 
+   		   		
 	
 LCC: IGNITION, 3, 2, 1 -
-     		   		
-	
-LCC: LIFT-OFF!
      		    	
 	
+LCC: LIFT-OFF!
+     		 		 	
+	
 CDR: And the clock is running.
-     		   		
+     			    
 	
 CMP: Okay. ... lift-off ...
-     			 	  
-	
-CC: Clear the tower!
-     		  		 
-	
-CDR: Roger dede [sic]. Clear the tower, and we have a roll program. ...
      				 		
 	
-CC: You have good thrust on all five engines.
+CC: Clear the tower!
       		 	 	
+	
+CDR: Roger dede [sic]. Clear the tower, and we have a roll program. ...
+     		 	   
+	
+CC: You have good thrust on all five engines.
+      		    
 	
 CDR: Thanks, Gordo. Roll's complete. and we have a pitch program.
-     		 	   
-	
-CC: Pitch.
-      		    
-	
-CC: Stand by for Mode I Bravo.
      	  				
 	
-CC: MARK. I Bravo.
+CC: Pitch.
      			 	  
 	
-CDR: Roger. I Bravo.
+CC: Stand by for Mode I Bravo.
      	 					
 	
-CMP: PROPELLANT DUMP, RCS COMMAND, DAVE.
+CC: MARK. I Bravo.
      		  		 
 	
-CDR: Okay.
+CDR: Roger. I Bravo.
       		    
 	
-CDR: Okay. Going through the air. (Laughter)
+CMP: PROPELLANT DUMP, RCS COMMAND, DAVE.
      	 	  	 
 	
-CC: ... 15 ...
+CDR: Okay.
      	 					
 	
-CMP: Cabin pressure decreasing.
+CDR: Okay. Going through the air. (Laughter)
      	 	 	  
 	
-CDR: Okay. Good.
+CC: ... 15 ...
      		 	   
 	
-LMP: Looks good over here.
+CMP: Cabin pressure decreasing.
       		  		
 	
-CMP: High at 20,000.
+CDR: Okay. Good.
      	 					
 	
-LMP: Dead air.
+LMP: Looks good over here.
       		 	 	
 	
-CMP: One minute.
+CMP: High at 20,000.
      			 	  
 	
-LMP: Here ...
+LMP: Dead air.
      	      
 	
-CC: ..., Houston. Everything looks perfect down here.
+CMP: One minute.
      			  	 
 	
-CDR: Okay. Looks smooth up here, Gordo. Okay, the altimeter is six zero.
+LMP: Here ...
      			  		
 	
-CMP: Well, how about that?
+CC: ..., Houston. Everything looks perfect down here.
      	 					
 	
-LMP: Exciting!
+CDR: Okay. Looks smooth up here, Gordo. Okay, the altimeter is six zero.
       		 			
 	
-CDR: Okay. We're through MAX q.
+CMP: Well, how about that?
       		   	
 	
-CMP: Okay. 1:32. Program looks good,Dave. Out at 11 miles.
+LMP: Exciting!
       		  	 
 	
-CDR: Okay. Good shot. Two and 1/2g.
+CDR: Okay. We're through MAX q.
       			   
 	
-LMP: Roger.
+CMP: Okay. 1:32. Program looks good,Dave. Out at 11 miles.
       			  	
 	
-CDR: Pitch profile looks good.
+CDR: Okay. Good shot. Two and 1/2g.
       		 	  
 	
 LMP: Roger.
