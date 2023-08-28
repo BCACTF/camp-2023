@@ -1,7 +1,7 @@
 name: JailBreak
 categories:
   - misc
-value: 75
+value: 100
 flag:
   file: ./flag.txt
 description: |-

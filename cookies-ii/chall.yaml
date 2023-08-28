@@ -1,7 +1,7 @@
 name: Cookies II
 categories:
   - webex
-value: 50
+value: 100
 flag: camp{$w3eT_c00ki3s_3nc0deD_duy4fejiefnb}
 description: |-
   My favorite snack is cookies, but I'll only reveal my secret recipe [the flag] to the right person.

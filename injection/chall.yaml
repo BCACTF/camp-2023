@@ -1,7 +1,7 @@
 name: Injection
 categories:
   - webex
-value: 25
+value: 150
 flag: camp{SQL_!nj3cteD!_w0W_329rh8qwrfj}
 description: |-
   I feel like my doctor is hiding something in his database, but his web portal keeps telling me 

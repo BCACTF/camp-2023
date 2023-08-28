@@ -1,7 +1,7 @@
 name: Shark Fin
 categories:
  - foren
-value: 75
+value: 50
 flag: camp{sH4rK_go_nOM_9f2f44f4735528}
 description: |-
   I bugged another CTF team's network and managed to capture these packets.

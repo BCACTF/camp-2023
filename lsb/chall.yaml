@@ -2,7 +2,7 @@ name: LSB
 categories:
   - foren
   - rev
-value: 125
+value: 75
 flag:
   file: ./flag.txt
 description: |-

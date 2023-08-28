@@ -1,7 +1,7 @@
 name: To Infinity and Beyond!
 categories:
   - binex
-value: 100
+value: 125
 flag:
   file: ./flag.txt
 description: >-
