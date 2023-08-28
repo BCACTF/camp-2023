@@ -5,10 +5,10 @@ value: 100
 flag: camp{7o0_m@nY_ch@RacteR5_buf349nrf}
 description: |-
   My friend sent this game to me, but he said the code isn't quite finished yet.
-  He also said to be careful because “The cardinality of one of the buffer constructs is delimited 
-  by a determinate measure." and "not to exceed the moral constructs of the space in this world 
-  thou hath been given". I don't really know what that means, but maybe you'll enjoy the game.
+  He also said to be careful because of limited memory and stuff, but I know I
+  can just download more RAM. Can you beat the game?
 hints:
+  - What marks the end of a string?
   - Have you heard of a buffer overflow?
 files:
   - src: /home/ctf/anagrams

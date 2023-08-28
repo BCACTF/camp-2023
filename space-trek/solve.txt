@@ -1,0 +1,3 @@
+1. Extract the whitespace lines between each line of text in the provided file.
+2. Combine the whitespace lines into text of ~70 whitespace lines.
+3. Run this whitespace text through a "Whitespace" language decompiler.

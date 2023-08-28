@@ -1,0 +1,98 @@
+LCC: 10, 9, 8, 7, 6, 5 -
+   		   		
+	
+LCC: IGNITION, 3, 2, 1 -
+     		    	
+	
+LCC: LIFT-OFF!
+     		 		 	
+	
+CDR: And the clock is running.
+     			    
+	
+CMP: Okay. ... lift-off ...
+     				 		
+	
+CC: Clear the tower!
+      		 	 	
+	
+CDR: Roger dede [sic]. Clear the tower, and we have a roll program. ...
+     		 	   
+	
+CC: You have good thrust on all five engines.
+      		    
+	
+CDR: Thanks, Gordo. Roll's complete. and we have a pitch program.
+     	  				
+	
+CC: Pitch.
+     			 	  
+	
+CC: Stand by for Mode I Bravo.
+     	 					
+	
+CC: MARK. I Bravo.
+     		  		 
+	
+CDR: Roger. I Bravo.
+      		    
+	
+CMP: PROPELLANT DUMP, RCS COMMAND, DAVE.
+     	 	  	 
+	
+CDR: Okay.
+     	 					
+	
+CDR: Okay. Going through the air. (Laughter)
+     	 	 	  
+	
+CC: ... 15 ...
+     		 	   
+	
+CMP: Cabin pressure decreasing.
+      		  		
+	
+CDR: Okay. Good.
+     	 					
+	
+LMP: Looks good over here.
+      		 	 	
+	
+CMP: High at 20,000.
+     			 	  
+	
+LMP: Dead air.
+     	      
+	
+CMP: One minute.
+     			  	 
+	
+LMP: Here ...
+     			  		
+	
+CC: ..., Houston. Everything looks perfect down here.
+     	 					
+	
+CDR: Okay. Looks smooth up here, Gordo. Okay, the altimeter is six zero.
+      		 			
+	
+CMP: Well, how about that?
+      		   	
+	
+LMP: Exciting!
+      		  	 
+	
+CDR: Okay. We're through MAX q.
+      			   
+	
+CMP: Okay. 1:32. Program looks good,Dave. Out at 11 miles.
+      			  	
+	
+CDR: Okay. Good shot. Two and 1/2g.
+      		 	  
+	
+LMP: Roger.
+     					 	
+	
+CMP: 1:50.
+  
