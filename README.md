@@ -1,4 +1,8 @@
-# CSCamp 2023 Problems
+# The CTF is over! Thanks for playing!
+
+Feel free to contact us if you have any questions!
+
+## CSCamp 2023 Problems
 
 - Remember to create a new branch
 - Copy the format of `chall.yaml` from `example/`
